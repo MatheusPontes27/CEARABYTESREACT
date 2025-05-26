@@ -4,7 +4,7 @@ import {
   Logo,
   Nav,
   NavLink,
-  ContactButton,
+  ContactButton
 } from './styles';
 
 function Home() {
@@ -12,7 +12,7 @@ function Home() {
     <>
       <HeaderContainer>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Logo src="/logo.png" alt="CearaBytes Logo" />
+          <Logo src="src\IMG\ChatGPT Image 26 de mai. de 2025, 09_09_32.png" alt="CearaBytes Logo" />
           <Nav>
             <NavLink href="#trabalho">Nosso Trabalho</NavLink>
             <NavLink href="#orcamentos">Orçamentos</NavLink>
@@ -21,33 +21,30 @@ function Home() {
             <NavLink href="#contatos">Contatos</NavLink>
           </Nav>
         </div>
-
         <ContactButton>Entre em contato</ContactButton>
       </HeaderContainer>
 
-      {/* Espaço para a header fixa */}
-      <div style={{ paddingTop: '80px' }}>
-        <section id="trabalho" style={{ height: '100vh', background: '#eee', padding: '40px' }}>
-          <h2>Nosso Trabalho</h2>
-          <p>Conteúdo da seção nosso trabalho.</p>
-        </section>
+      <div className="spacer" /> {/* para espaçar a header fixa */}
 
-        <section id="orcamentos" style={{ height: '100vh', background: '#ddd', padding: '40px' }}>
-          <h2>Orçamentos</h2>
-          <p>Conteúdo da seção orçamentos.</p>
-        </section>
+      <section id="trabalho">
+        <h2>Nosso Trabalho</h2>
+        <p>Conteúdo da seção nosso trabalho.</p>
+      </section>
 
-        <section id="visao" style={{ height: '100vh', background: '#ccc', padding: '40px' }}>
-          <h2>Nossa Visão</h2>
-          <p>Conteúdo da seção nossa visão.</p>
-        </section>
+      <section id="orcamentos">
+        <h2>Orçamentos</h2>
+        <p>Conteúdo da seção orçamentos.</p>
+      </section>
 
-        <section id="parceiros" style={{ height: '100vh', background: '#bbb', padding: '40px' }}>
-          <h2>Parceiros</h2>
-          <p>Conteúdo da seção parceiros.</p>
-        </section>
-        
-      </div>
+      <section id="visao">
+        <h2>Nossa Visão</h2>
+        <p>Conteúdo da seção nossa visão.</p>
+      </section>
+
+      <section id="parceiros">
+        <h2>Parceiros</h2>
+        <p>Conteúdo da seção parceiros.</p>
+      </section>
     </>
   );
 }
