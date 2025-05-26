@@ -176,26 +176,24 @@ export const ButtonNormal = styled.button`
 export const Button3D = styled.button`
   background-color: #007bff;
   color: white;
+  position: relative;
   padding: 16px 32px;
   border-radius: 20px;
+  text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
   transition: all 0.2s ease;
   box-shadow: 0 4px 0 #0056b3;
   position: relative;
-  top: 25px;
-  border: none;
-  cursor: pointer;
-  position: relative
-  
+  top: 20px;
 
   &:hover {
     background-color: #0056b3;
   }
 
   &:active {
-    top: 4px;
-    box-shadow: 0 0 0 #0056b3;
+    top: 24px;
+    box-shadow: 0 0px 0 #0056b3;
   }
 `;
 

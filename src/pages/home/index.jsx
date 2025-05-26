@@ -43,7 +43,7 @@ function Home() {
         <HeroContent>
           <HeroTitle>Transformamos idéias em soluções digitais</HeroTitle>
           <HeroSubtitle>
-            Desenvolvimento de Site e muito mais.
+            Desenvolvimento de Sites e muito mais.
           </HeroSubtitle>
 
           <Button3D>Entre em contato</Button3D>
