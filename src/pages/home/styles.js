@@ -31,16 +31,46 @@ export const Nav = styled.nav`
 
 // Links de navegação
 export const NavLink = styled.a`
+  position: relative;
+  color: #0052cc; /* azul da marca */
   text-decoration: none;
-  color: #333;
+  padding: 0.5rem 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
   font-weight: 500;
-  font-size: 18px;
-  transition: color 0.3s;
+  overflow: hidden;
 
-  &:hover {
-    color: #0077cc;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #0052cc; /* azul visível no branco */
+    transition: all 0.4s ease;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover::before {
+    width: 100%;
+    left: 0;
+  }
+
+  &:hover::after {
+    width: 100%;
+    right: 0;
   }
 `;
+
 
 // Botão "Entre em contato"
 export const ContactButton = styled.button`
