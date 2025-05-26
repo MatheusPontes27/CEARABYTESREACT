@@ -122,14 +122,14 @@ export const ButtonNormal = styled.button`
   display: flex;
   position: relative;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 30px;
   background-color: transparent;
   border: 2px solid #0052cc;
   border-radius: 8px;
   color: #0052cc;
   margin-left: auto;
   top: -50px;
-  left: -120px;
+  left: 50px;
   font-weight: 600;
   cursor: pointer;
   font-size: 16px;
@@ -182,25 +182,37 @@ export const ProjectsContainer = styled.div`
 // Linha com 2 painéis animados para a direita ou esquerda
 export const ProjectRow = styled.div`
   display: flex;
-  gap: 20px;
+  gap:0px;
   width: 100%;
-  max-width: 600px;
-  animation: ${({ direction }) => (direction === 'right' ? slideRight : slideLeft)} 3s ease-in-out infinite alternate;
+  justify-content: ${({ direction }) =>
+    direction === 'right' ? 'flex-end' : 'flex-start'};
+  padding: 0px 100px 70px; /* padding lateral para afastar só um pouco da borda */
+  animation: ${({ direction }) =>
+    direction === 'right' ? slideRight : slideLeft} 3s ease-in-out infinite alternate;
 `;
 
 // Cada painel do projeto (com imagem)
 export const ProjectPanel = styled.div`
-  flex: 1;
-  height: 200px;
-  background-color: #ddd;
-  border-radius: 12px;
+  width: 360px;
+  height: 202px; // 360 / 16 * 9 = 202.5 (mantendo a proporção 16:9)
   overflow: hidden;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-  cursor: pointer;
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;     // preenche sem distorcer
+    object-position: center;
+    display: block;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 `;
+
+

@@ -68,19 +68,19 @@ function Home() {
         <ProjectsContainer>
           <ProjectRow direction="right">
             <ProjectPanel>
-              <img src="/imagens/projeto1.jpg" alt="Projeto 1" />
+              <img src="src\IMG\Captura de tela 2025-05-26 140143.png" alt="Projeto 1" />
             </ProjectPanel>
             <ProjectPanel>
-              <img src="/imagens/projeto2.jpg" alt="Projeto 2" />
+              <img src="src\IMG\Captura de tela 2025-05-26 140210.png" alt="Projeto 2" />
             </ProjectPanel>
           </ProjectRow>
 
           <ProjectRow direction="left">
             <ProjectPanel>
-              <img src="/imagens/projeto3.jpg" alt="Projeto 3" />
+              <img src="src\IMG\Captura de tela 2025-05-26 140329.png" alt="Projeto 3" />
             </ProjectPanel>
             <ProjectPanel>
-              <img src="/imagens/projeto4.jpg" alt="Projeto 4" />
+              <img src="src\IMG\clinica 1.png" alt="Projeto 4" />
             </ProjectPanel>
           </ProjectRow>
         </ProjectsContainer>
