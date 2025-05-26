@@ -1,3 +1,4 @@
+import ParticleBackground from '../../components/ParticleBackground';
 import React from 'react';
 import {
   HeaderContainer,
@@ -20,6 +21,8 @@ import {
 function Home() {
   return (
     <>
+      <ParticleBackground />
+
       <HeaderContainer>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Logo src="src/IMG/ChatGPT Image 26 de mai. de 2025, 09_09_32.png" alt="CearaBytes Logo" />
@@ -38,9 +41,9 @@ function Home() {
 
       <HeroSection>
         <HeroContent>
-          <HeroTitle>Transformamos ideias em soluções digitais</HeroTitle>
+          <HeroTitle>Transformamos idéias em soluções digitais</HeroTitle>
           <HeroSubtitle>
-            Desenvolvimento de sistemas, sites, automações e muito mais.
+            Desenvolvimento de Site e muito mais.
           </HeroSubtitle>
 
           <Button3D>Entre em contato</Button3D>
@@ -68,19 +71,19 @@ function Home() {
         <ProjectsContainer>
           <ProjectRow direction="right">
             <ProjectPanel>
-              <img src="src\IMG\Captura de tela 2025-05-26 140143.png" alt="Projeto 1" />
+              <img src="src\\IMG\\Captura de tela 2025-05-26 140143.png" alt="Projeto 1" />
             </ProjectPanel>
             <ProjectPanel>
-              <img src="src\IMG\Captura de tela 2025-05-26 140210.png" alt="Projeto 2" />
+              <img src="src\\IMG\\Captura de tela 2025-05-26 140210.png" alt="Projeto 2" />
             </ProjectPanel>
           </ProjectRow>
 
           <ProjectRow direction="left">
             <ProjectPanel>
-              <img src="src\IMG\Captura de tela 2025-05-26 140329.png" alt="Projeto 3" />
+              <img src="src\\IMG\\Captura de tela 2025-05-26 140329.png" alt="Projeto 3" />
             </ProjectPanel>
             <ProjectPanel>
-              <img src="src\IMG\clinica 1.png" alt="Projeto 4" />
+              <img src="src\\IMG\\clinica 1.png" alt="Projeto 4" />
             </ProjectPanel>
           </ProjectRow>
         </ProjectsContainer>

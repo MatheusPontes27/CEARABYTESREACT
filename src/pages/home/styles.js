@@ -87,13 +87,14 @@ export const Section = styled.section`
   }
 `;
 
+
 export const HeroSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: flex-start;
   height: 100vh;
   padding: 0 80px;
-  background: #fff;
+  background: transparent;
 `;
 
 export const HeroContent = styled.div`
@@ -101,9 +102,13 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroTitle = styled.h1`
-  font-size: 3.5rem;
-  font-family: 'Cyne Semi Bold', sans-serif;
-  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-clip: text;
 `;
 
 export const HeroSubtitle = styled.p`
