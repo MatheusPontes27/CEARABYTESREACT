@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled, { keyframes } from 'styled-components';
 
 // Header fixo no topo
 export const HeaderContainer = styled.header`
@@ -8,7 +7,7 @@ export const HeaderContainer = styled.header`
   left: 0;
   right: 0;
   height: 100px;
-  background-color: #f3f3f3;
+  background-color: #fff;
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
@@ -113,39 +112,95 @@ export const HeroSubtitle = styled.p`
   line-height: 1.6;
 `;
 
-export const Button3D = styled.button`
-  padding: 12px 28px;
-  background: #005eff;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-family: 'Cyne Semi Bold', sans-serif;
-  cursor: pointer;
-  margin-bottom: 20px;
-  transition: transform 0.1s ease-in-out;
-
-  &:active {
-    transform: translateY(2px);
-  }
-
-  &:hover {
-    background: #004ed6;
-  }
+export const ButtonsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
 `;
 
 export const ButtonNormal = styled.button`
-  padding: 12px 28px;
-  background: transparent;
-  color: #005eff;
-  border: 2px solid #005eff;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-family: 'Cyne Semi Bold', sans-serif;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #0052cc;
+  border-radius: 8px;
+  color: #0052cc;
+  margin-left: auto;
+  top: -50px;
+  left: -120px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
+  font-size: 16px;
+  gap: 8px;
+`;
+
+export const Button3D = styled.button`
+  background-color: #007bff;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 0 #0056b3;
+  position: relative;
+  top: 0;
+  border: none;
+  cursor: pointer;
 
   &:hover {
-    background: #f0f7ff;
+    background-color: #0056b3;
+  }
+
+  &:active {
+    top: 4px;
+    box-shadow: 0 0 0 #0056b3;
+  }
+`;
+
+// Animações para os painéis dos projetos
+const slideRight = keyframes`
+  0% { transform: translateX(0); }
+  100% { transform: translateX(20px); }
+`;
+
+const slideLeft = keyframes`
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-20px); }
+`;
+
+// Container para as linhas dos projetos
+export const ProjectsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+`;
+
+// Linha com 2 painéis animados para a direita ou esquerda
+export const ProjectRow = styled.div`
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  animation: ${({ direction }) => (direction === 'right' ? slideRight : slideLeft)} 3s ease-in-out infinite alternate;
+`;
+
+// Cada painel do projeto (com imagem)
+export const ProjectPanel = styled.div`
+  flex: 1;
+  height: 200px;
+  background-color: #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;
