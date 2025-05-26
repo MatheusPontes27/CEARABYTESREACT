@@ -112,9 +112,11 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroSubtitle = styled.p`
-  font-size: 1.4rem;
-  margin-bottom: 40px;
-  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #1a1a1a;
+  margin-top: 1rem;
 `;
 
 export const ButtonsWrapper = styled.div`
@@ -133,7 +135,7 @@ export const ButtonNormal = styled.button`
   border-radius: 8px;
   color: #0052cc;
   margin-left: auto;
-  top: -50px;
+  top: -25px;
   left: 50px;
   font-weight: 600;
   cursor: pointer;
@@ -151,9 +153,11 @@ export const Button3D = styled.button`
   transition: all 0.2s ease;
   box-shadow: 0 4px 0 #0056b3;
   position: relative;
-  top: 0;
+  top: 25px;
   border: none;
   cursor: pointer;
+  position: relative
+  
 
   &:hover {
     background-color: #0056b3;
