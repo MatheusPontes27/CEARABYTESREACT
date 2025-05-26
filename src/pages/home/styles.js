@@ -124,7 +124,7 @@ export const ButtonNormal = styled.button`
   align-items: center;
   padding: 10px 30px;
   background-color: transparent;
-  border: 2px solid #0052cc;
+  border: none;
   border-radius: 8px;
   color: #0052cc;
   margin-left: auto;
