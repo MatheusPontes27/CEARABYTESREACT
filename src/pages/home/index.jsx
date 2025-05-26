@@ -1,11 +1,6 @@
 import React from 'react';
-import {
-  HeaderContainer,
-  Logo,
-  Nav,
-  NavLink,
-  ContactButton
-} from './styles';
+import { HeaderContainer, Logo, Nav, NavLink, ContactButton } from './styles';
+import { HeroSection, HeroContent, HeroTitle, HeroSubtitle, Button3D, ButtonNormal } from './styles';
 
 function Home() {
   return (
@@ -26,25 +21,19 @@ function Home() {
 
       <div className="spacer" /> {/* para espaçar a header fixa */}
 
-      <section id="trabalho">
-        <h2>Nosso Trabalho</h2>
-        <p>Conteúdo da seção nosso trabalho.</p>
-      </section>
-
-      <section id="orcamentos">
-        <h2>Orçamentos</h2>
-        <p>Conteúdo da seção orçamentos.</p>
-      </section>
-
-      <section id="visao">
-        <h2>Nossa Visão</h2>
-        <p>Conteúdo da seção nossa visão.</p>
-      </section>
-
-      <section id="parceiros">
-        <h2>Parceiros</h2>
-        <p>Conteúdo da seção parceiros.</p>
-      </section>
+      <HeroSection>
+        <HeroContent>
+         <HeroTitle>
+          Transformamos ideias em soluções digitais
+         </HeroTitle>
+        <HeroSubtitle>
+         Desenvolvimento de sistemas, sites, automações e muito mais. 
+        </HeroSubtitle>
+    
+        <Button3D>Entre em contato</Button3D>
+        <ButtonNormal>Veja nosso vídeo institucional</ButtonNormal>
+       </HeroContent>
+      </HeroSection>
     </>
   );
 }
