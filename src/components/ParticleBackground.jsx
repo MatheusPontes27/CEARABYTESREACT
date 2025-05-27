@@ -12,10 +12,7 @@ function ParticleBackground() {
       id="tsparticles"
       init={particlesInit}
       options={{
-        background: {
-          color: { value: 'transparent' },
-        },
-        fullScreen: { enable: true, zIndex: 0 },
+        fullScreen: { enable: false },
         particles: {
           number: { value: 60, density: { enable: true, area: 800 } },
           color: { value: '#007bff' },
@@ -35,6 +32,14 @@ function ParticleBackground() {
             resize: true,
           },
         },
+      }}
+      style={{
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        zIndex: 0,
+        top: 0,
+        left: 0,
       }}
     />
   );

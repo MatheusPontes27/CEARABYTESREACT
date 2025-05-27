@@ -1,54 +1,40 @@
 import ParticleBackground from '../../components/ParticleBackground';
+import './styles.css';
 import React from 'react';
-import {
-  HeaderContainer,
-  Logo,
-  Nav,
-  NavLink,
-  ContactButton,
-  Spacer,
-  HeroSection,
-  HeroContent,
-  HeroTitle,
-  HeroSubtitle,
-  Button3D,
-  ButtonNormal,
-  ProjectsContainer,
-  ProjectRow,
-  ProjectPanel,
-} from './styles';
 
 function Home() {
   return (
     <>
       <ParticleBackground />
 
-      <HeaderContainer>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Logo src="src/IMG/ChatGPT Image 26 de mai. de 2025, 09_09_32.png" alt="CearaBytes Logo" />
-          <Nav>
-            <NavLink href="#trabalho">Nosso Trabalho</NavLink>
-            <NavLink href="#orcamentos">Orçamentos</NavLink>
-            <NavLink href="#visao">Nossa Visão</NavLink>
-            <NavLink href="#parceiros">Parceiros</NavLink>
-            <NavLink href="#contatos">Contatos</NavLink>
-          </Nav>
+      <header className="header-container">
+        <div className="header-content">
+          <img
+            className="logo"
+            src="src/IMG/ChatGPT Image 26 de mai. de 2025, 09_09_32.png"
+            alt="CearaBytes Logo"
+          />
+          <nav className="nav">
+            <a className="nav-link" href="#trabalho">Projetos</a>
+            <a className="nav-link" href="#orcamentos">Orçamentos</a>
+            <a className="nav-link" href="#visao">Nossa Visão</a>
+            <a className="nav-link" href="#parceiros">Parceiros</a>
+            <a className="nav-link" href="#contatos">Contatos</a>
+          </nav>
         </div>
-        <ContactButton>Entre em contato</ContactButton>
-      </HeaderContainer>
+        <a className="contact-button" href="#contatos">Entre em contato</a>
+      </header>
 
-      <Spacer /> {/* componente styled para espaçar */}
+      <div className="spacer"></div>
 
-      <HeroSection>
-        <HeroContent>
-          <HeroTitle>Transformamos idéias em soluções digitais</HeroTitle>
-          <HeroSubtitle>
-            Desenvolvimento de Sites e muito mais.
-          </HeroSubtitle>
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="hero-title">Transformamos ideias em soluções digitais</h1>
+          <p className="hero-subtitle">Desenvolvimento de Sites e muito mais.</p>
 
-          <Button3D>Entre em contato</Button3D>
+          <a href="#contatos" className="button-3d">Entre em contato</a>
 
-          <ButtonNormal>
+          <button className="button-normal">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -65,29 +51,51 @@ function Home() {
               <polygon points="10 8 16 12 10 16 10 8" fill="none" />
             </svg>
             Vídeo Institucional
-          </ButtonNormal>
-        </HeroContent>
+          </button>
+        </div>
 
-        <ProjectsContainer>
-          <ProjectRow direction="right">
-            <ProjectPanel>
-              <img src="src\\IMG\\Captura de tela 2025-05-26 140143.png" alt="Projeto 1" />
-            </ProjectPanel>
-            <ProjectPanel>
-              <img src="src\\IMG\\Captura de tela 2025-05-26 140210.png" alt="Projeto 2" />
-            </ProjectPanel>
-          </ProjectRow>
+        <div className="projects-container">
+          <div className="project-row right">
+            <div className="project-panel">
+              <img src="src/IMG/Captura de tela 2025-05-26 140143.png" alt="Projeto 1" />
+            </div>
+            <div className="project-panel">
+              <img src="src/IMG/Captura de tela 2025-05-26 140210.png" alt="Projeto 2" />
+            </div>
+          </div>
 
-          <ProjectRow direction="left">
-            <ProjectPanel>
-              <img src="src\\IMG\\Captura de tela 2025-05-26 140329.png" alt="Projeto 3" />
-            </ProjectPanel>
-            <ProjectPanel>
-              <img src="src\\IMG\\clinica 1.png" alt="Projeto 4" />
-            </ProjectPanel>
-          </ProjectRow>
-        </ProjectsContainer>
-      </HeroSection>
+          <div className="project-row left">
+            <div className="project-panel">
+              <img src="src/IMG/Captura de tela 2025-05-26 140329.png" alt="Projeto 3" />
+            </div>
+            <div className="project-panel">
+              <img src="src/IMG/clinica 1.png" alt="Projeto 4" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="projetos-section" id="projetos">
+        <div className="projetos-container">
+          {/* Lado esquerdo */}
+          <div className="projetos-texto">
+            <h2>Clínica Eminence</h2>
+            <p>
+              Projeto para a Clínica Odontológica Eminence, situada na cidade de Campina Grande - PB. Trouxe agilidade e eficiencia na marcação de consultas, além de captar clientes.
+            </p>
+            <button className="botao3d">Ver mais</button>
+          </div>
+
+          {/* Lado direito */}
+          <div className="painel3d-container">
+            <img
+              src="src/IMG/clinica 1.png"
+              alt="Projeto"
+              className="painel3d"
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
