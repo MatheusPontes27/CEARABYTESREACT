@@ -76,6 +76,9 @@ function Home() {
       </section>
 
       <section className="projetos-section" id="projetos">
+        <div className='Titulo-Projetos'>
+          <h1>Projetos</h1>
+        </div>
         <div className="projetos-container">
           {/* Lado esquerdo */}
           <div className="projetos-texto">
@@ -94,6 +97,25 @@ function Home() {
               className="painel3d"
             />
           </div>
+
+          <section class="projeto invertido-left">
+            <div class="painel3d-container-left">
+             <div className="painel3d-left">
+              <img
+               src="src/IMG/Captura de tela 2025-05-26 140329.png"
+               alt="Projeto"
+               className="imagem-projeto"
+               />
+              </div>
+            </div>
+            <div class="projetos-texto-invertido">
+              <h2>Clínica Eminence</h2>
+            <p>
+              Projeto para a Clínica Odontológica Eminence, situada na cidade de Campina Grande - PB. Trouxe agilidade e eficiencia na marcação de consultas, além de captar clientes.
+            </p>
+            <button className="botao3d-left">Ver mais</button>
+            </div>
+          </section>
         </div>
       </section>
     </>
