@@ -11,7 +11,7 @@ function Home() {
         <div className="header-content">
           <img
             className="logo"
-            src="src/IMG/ChatGPT Image 26 de mai. de 2025, 09_09_32.png"
+            src="public/ChatGPT Image 26 de mai. de 2025, 09_09_32.png"
             alt="CearaBytes Logo"
           />
           <nav className="nav">
@@ -56,19 +56,19 @@ function Home() {
         <div className="projects-container">
           <div className="project-row right">
             <div className="project-panel">
-              <img src="src/IMG/Captura de tela 2025-05-26 140143.png" alt="Projeto 1" />
+              <img src="public/Captura de tela 2025-05-26 140143.png" alt="Projeto 1" />
             </div>
             <div className="project-panel">
-              <img src="src/IMG/Captura de tela 2025-05-26 140210.png" alt="Projeto 2" />
+              <img src="public/Captura de tela 2025-05-26 140210.png" alt="Projeto 2" />
             </div>
           </div>
 
           <div className="project-row left">
             <div className="project-panel">
-              <img src="src/IMG/Captura de tela 2025-05-26 140329.png" alt="Projeto 3" />
+              <img src="public/Captura de tela 2025-05-26 140329.png" alt="Projeto 3" />
             </div>
             <div className="project-panel">
-              <img src="src/IMG/clinica 1.png" alt="Projeto 4" />
+              <img src="public/clinica 1.png" alt="Projeto 4" />
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ function Home() {
           {/* Lado direito */}
           <div className="painel3d-container">
             <img
-              src="src/IMG/clinica 1.png"
+              src="public/clinica 1.png"
               alt="Projeto"
               className="painel3d"
             />
@@ -99,7 +99,7 @@ function Home() {
             <div class="painel3d-container-left">
              <div className="painel3d-left">
               <img
-               src="src\IMG\Captura de tela 2025-05-26 140329.png"
+               src="public\Captura de tela 2025-05-26 140329.png"
                alt="Projeto"
                className="imagem-projeto"
                />
@@ -127,7 +127,7 @@ function Home() {
           {/* Lado direito */}
           <div className="painel3d-container">
             <img
-              src="src\IMG\Captura de tela 2025-05-26 140210.png"
+              src="public\Captura de tela 2025-05-26 140210.png"
               alt="Projeto"
               className="painel3d"
             />
@@ -138,7 +138,7 @@ function Home() {
             <div class="painel3d-container-left">
              <div className="painel3d-left">
               <img
-               src="src\IMG\Captura de tela 2025-05-26 140143.png"
+               src="public\Captura de tela 2025-05-26 140143.png"
                alt="Projeto"
                className="imagem-projeto"
                />
