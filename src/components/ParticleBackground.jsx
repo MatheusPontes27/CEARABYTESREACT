@@ -2,6 +2,7 @@ import React from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 
+
 function ParticleBackground() {
   const particlesInit = async (main) => {
     await loadFull(main);
@@ -46,3 +47,5 @@ function ParticleBackground() {
 }
 
 export default ParticleBackground;
+
+

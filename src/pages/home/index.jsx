@@ -13,11 +13,11 @@ function Home() {
             className="logo"
             src="/ChatGPT Image 26 de mai. de 2025, 09_09_32.png"
             alt="CearaBytes Logo"
-          />
+          />      
           <nav className="nav">
-            <a className="nav-link" href="#trabalho">Projetos</a>
-            <a className="nav-link" href="#orcamentos">Orçamentos</a>
-            <a className="nav-link" href="#parceiros">Sobre Nós</a>
+            <a className="nav-link" href="#projetos">Projetos</a>
+            <a className="nav-link" href="#planos">Orçamentos</a>
+            <a className="nav-link" href="#sobrenos">Sobre Nós</a>
             <a className="nav-link" href="#contatos">Contatos</a>
           </nav>
         </div>
@@ -74,7 +74,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="projetos-section" id="projetos">
+      <section id='projetos' className="projetos-section">
         <h2 className="Titulo-Projetos">Projetos</h2>
         <div className="projetos-container">
           {/* Lado esquerdo */}
@@ -154,8 +154,8 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="planos">
-  <h2 className="Titulo-Projetos1">Nossos Planos</h2>
+      <section className="planos">
+  <h2 id='planos' className="Titulo-Projetos1">Nossos Planos</h2>
 
   <div className="cards-container">
     <div className="card card-bronze animate-card">
@@ -224,7 +224,7 @@ function Home() {
   </div>
 </section>
 
-<section className="sobre-nos-section">
+<section id='sobrenos' className="sobre-nos-section">
   <h2 className="Titulo-Projetos2">Sobre Nós</h2>
   <div className="sobre-nos-container">
     <div className="sobre-nos-texto">
@@ -245,7 +245,7 @@ function Home() {
     </div>
   </div>
 </section>
-<section className="contato-section">
+<section id='contatos' className="contato-section">
   <div className="contato-esquerda">
   <h1>Entre em Contato</h1>
   <form className="form-contato" action="mailto:contato@cearabytes.com.br" method="POST" encType="text/plain">
