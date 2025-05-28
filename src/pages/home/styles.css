@@ -524,42 +524,45 @@
 
 /* Frente */
 .card-front {
-  background: #333;
+  background: #fff;
   border-radius: 0;
+  border: 3px solid transparent; /* será substituído abaixo */
+  color: black;
 }
 
-/* Fundo de cada card frontal específico */
+/* Borda bronze */
 .card-bronze .card-front {
-  background: #b08d57; /* cor bronze */
+  border-color: #b08d57;
 }
 
+/* Borda prata */
 .card-silver .card-front {
-  background: #c0c0c0; /* cor prata */
-  color: black;
+  border-color: #c0c0c0;
 }
 
+/* Borda ouro */
 .card-gold .card-front {
-  background: #d4af37; /* cor ouro */
-  color: black;
+  border-color: #d4af37;
 }
 
-/* Verso do card */
 .card-back {
-  background: inherit; /* herdará a cor da frente, mas pode alterar */
   transform: rotateY(180deg);
   border-radius: 0;
-  /* background sólido para o verso */
+  color: white;
 }
 
+/* Fundo bronze */
 .card-bronze .card-back {
   background: #b08d57;
 }
 
+/* Fundo prata */
 .card-silver .card-back {
   background: #c0c0c0;
   color: black;
 }
 
+/* Fundo ouro */
 .card-gold .card-back {
   background: #d4af37;
   color: black;
@@ -577,17 +580,17 @@
   padding: 12px 30px;
   font-size: 1.1rem;
   color: white;
-  background: linear-gradient(145deg, #4caf50, #388e3c);
+  background: linear-gradient(145deg, #0056b3, #0056b3);
   border: none;
   border-radius: 25px;
-  box-shadow: 0 5px 15px rgba(56, 142, 60, 0.6);
+  box-shadow: 0 5px 15px rgba(1, 47, 112, 0.6);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .btn-3d:hover {
-  background: linear-gradient(145deg, #388e3c, #4caf50);
-  box-shadow: 0 8px 20px rgba(56, 142, 60, 0.9);
+  background: linear-gradient(145deg, #0056b3, #0056b3);
+  box-shadow: 0 8px 20px rgba(43, 98, 175, 0.9);
   transform: translateY(-3px);
 }
 
@@ -725,22 +728,31 @@
 /* Botão menor e ajustado */
 .btn-email {
   align-self: flex-start;
-  padding: 10px 25px;
+  padding: 12px 28px;
   font-size: 1rem;
+  font-weight: bold;
   background: linear-gradient(145deg, #4caf50, #388e3c);
   color: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(56, 142, 60, 0.5);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 0 #2e7d32, 0 4px 12px rgba(56, 142, 60, 0.5);
+  transition: all 0.2s ease-in-out;
+  transform: translateY(0);
+  position: relative;
 }
 
 .btn-email:hover {
   background: linear-gradient(145deg, #388e3c, #4caf50);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(56, 142, 60, 0.8);
+  box-shadow: 0 10px 0 #2e7d32, 0 6px 16px rgba(56, 142, 60, 0.6);
 }
+
+.btn-email:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #2e7d32, 0 2px 8px rgba(56, 142, 60, 0.4);
+}
+
 
 .contato-esquerda {
   flex: 1;

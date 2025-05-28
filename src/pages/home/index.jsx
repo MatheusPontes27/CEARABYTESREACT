@@ -158,8 +158,14 @@ function Home() {
   <h2 className="Titulo-Projetos1">Nossos Planos</h2>
 
   <div className="cards-container">
-    <div className="card card-bronze">
+    <div className="card card-bronze animate-card">
       <div className="card-front">
+        <div className="card-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d2691e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
         <h3>Bronze</h3>
         <p>
           Site institucional com 1 página<br />
@@ -168,13 +174,19 @@ function Home() {
         </p>
       </div>
       <div className="card-back">
-        <p>R$ 99,90</p>
+        <p>R$ 199,90</p>
         <button className="btn-3d">Contratar</button>
       </div>
     </div>
 
-    <div className="card card-silver">
+    <div className="card card-silver animate-card">
       <div className="card-front">
+        <div className="card-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4682b4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+        </div>
         <h3>Silver</h3>
         <p>
           Site completo com até 5 páginas<br />
@@ -183,13 +195,20 @@ function Home() {
         </p>
       </div>
       <div className="card-back">
-        <p>R$ 199,90</p>
+        <p>R$ 599,90</p>
         <button className="btn-3d">Contratar</button>
       </div>
     </div>
 
-    <div className="card card-gold">
+    <div className="card card-gold animate-card">
       <div className="card-front">
+        <div className="card-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#daa520" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="2" y="7" width="20" height="12" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </div>
         <h3>Gold</h3>
         <p>
           Site premium com blog, integração e painel<br />
@@ -198,12 +217,13 @@ function Home() {
         </p>
       </div>
       <div className="card-back">
-        <p>R$ 299,90</p>
+        <p>R$ 899,90</p>
         <button className="btn-3d">Contratar</button>
       </div>
     </div>
   </div>
 </section>
+
 <section className="sobre-nos-section">
   <h2 className="Titulo-Projetos2">Sobre Nós</h2>
   <div className="sobre-nos-container">
