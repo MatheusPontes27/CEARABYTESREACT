@@ -1,4 +1,5 @@
 import ParticleBackground from '../../components/ParticleBackground';
+import Scroll from '../../components/scroll';
 import './styles.css';
 import React from 'react';
 
@@ -73,8 +74,7 @@ function Home() {
           </div>
         </div>
       </section>
-
-      <section id='projetos' className="projetos-section">
+      <Scroll><section id='projetos' className="projetos-section">
         <h2 className="Titulo-Projetos">Projetos</h2>
         <div className="projetos-container">
           {/* Lado esquerdo */}
@@ -153,8 +153,8 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="planos">
+      </section></Scroll>
+      <Scroll><section className="planos">
   <h2 id='planos' className="Titulo-Projetos1">Nossos Planos</h2>
 
   <div className="cards-container">
@@ -222,9 +222,9 @@ function Home() {
       </div>
     </div>
   </div>
-</section>
+</section></Scroll>
 
-<section id='sobrenos' className="sobre-nos-section">
+<Scroll><section id='sobrenos' className="sobre-nos-section">
   <h2 className="Titulo-Projetos2">Sobre Nós</h2>
   <div className="sobre-nos-container">
     <div className="sobre-nos-texto">
@@ -244,8 +244,8 @@ function Home() {
       <img src="/img/sobrenos.png" alt="Equipe CearáBytes trabalhando" />
     </div>
   </div>
-</section>
-<section id='contatos' className="contato-section">
+</section></Scroll>
+<Scroll><section id='contatos' className="contato-section">
   <div className="contato-esquerda">
   <h1>Entre em Contato</h1>
   <form className="form-contato" action="mailto:contato@cearabytes.com.br" method="POST" encType="text/plain">
@@ -295,7 +295,7 @@ function Home() {
       </div>
     </div>
   </div>
-</section>
+</section></Scroll>
 <footer className="footer">
   <div className="footer-content">
     {/* Coluna 1: Sobre Nós */}
