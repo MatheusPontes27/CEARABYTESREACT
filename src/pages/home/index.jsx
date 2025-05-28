@@ -241,7 +241,7 @@ function Home() {
       </p>
     </div>
     <div className="sobre-nos-imagem">
-      <img src="public\eu trabalhando.png" alt="Equipe CearáBytes trabalhando" />
+      <img src="/eu trabalhando.png" alt="Equipe CearáBytes trabalhando" />
     </div>
   </div>
 </section></Scroll>
