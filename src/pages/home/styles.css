@@ -367,6 +367,7 @@
 }
 
 .botao3d {
+  position: relative;
   background: linear-gradient(145deg, #007aff, #0051cb);
   border: none;
   color: white;
@@ -378,6 +379,38 @@
   cursor: pointer;
   transition: all 0.3s ease;
   transform: perspective(800px) rotateX(5deg);
+  overflow: visible; /* ← DEIXE visível para que o brilho pulse fora */
+  z-index: 1;
+}
+
+.botao3d::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00aaff;
+  border-radius: 12px;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  animation: pulseBorder 2s infinite;
+  z-index: -1; /* para ficar atrás do botão */
+}
+
+@keyframes pulseBorder {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
 }
 
 .botao3d:hover {
@@ -385,10 +418,10 @@
 }
 
 .botao3d-left {
+  position: relative;
   background: linear-gradient(145deg, #007aff, #0051cb);
   border: none;
   color: white;
-  position: relative;
   left: 450px;
   padding: 15px 25px;
   font-size: 1rem;
@@ -398,6 +431,38 @@
   cursor: pointer;
   transition: all 0.3s ease;
   transform: perspective(800px) rotateX(5deg);
+  overflow: visible; /* permite que o efeito ultrapasse o botão */
+  z-index: 1;
+}
+
+.botao3d-left::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00aaff;
+  border-radius: 12px;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  animation: pulseBorder 2s infinite;
+  z-index: -1;
+}
+
+@keyframes pulseBorder {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
 }
 
 .botao3d-left:hover {
@@ -662,7 +727,7 @@
 }
 
 .sobre-nos-imagem img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);

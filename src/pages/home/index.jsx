@@ -241,7 +241,7 @@ function Home() {
       </p>
     </div>
     <div className="sobre-nos-imagem">
-      <img src="/img/sobrenos.png" alt="Equipe CearáBytes trabalhando" />
+      <img src="public\eu trabalhando.png" alt="Equipe CearáBytes trabalhando" />
     </div>
   </div>
 </section></Scroll>
@@ -282,7 +282,7 @@ function Home() {
       <div className="item-contato">
         <i className="fas fa-map-marker-alt"></i>
         <div>
-          <h3>Ipueiras - CE</h3>
+          <h3>Fortaleza - CE</h3>
           <p>Estamos localizados no interior do Ceará.</p>
         </div>
       </div>
@@ -308,21 +308,27 @@ function Home() {
     </div>
 
     {/* Coluna 2: Redes Sociais */}
-    <div className="footer-column">
-      <h4>Redes Sociais</h4>
-      <div className="social-icons">
-        <a href="#"><i className="fa fa-facebook"></i> Facebook</a>
-        <a href="#"><i className="fa fa-instagram"></i> Instagram</a>
-        <a href="#"><i className="fa fa-twitter"></i> Twitter</a>
-      </div>
+   <div className="footer-column">
+  <h4>Redes Sociais</h4>
+  <div className="social-icons">
+    <a href="https://facebook.com" target="_blank" rel="noreferrer">
+      <i className="fab fa-facebook-f"></i> Facebook
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noreferrer">
+      <i className="fab fa-instagram"></i> Instagram
+    </a>
+     <a href="https://twitter.com" target="_blank" rel="noreferrer">
+      <i className="fab fa-twitter"></i> Twitter
+     </a>
     </div>
+  </div>
 
     {/* Coluna 3: Contato */}
     <div className="footer-column">
       <h4>Entre em Contato</h4>
       <ul>
-        <li><i className="fa fa-phone"></i> (88) 9 8175-7203</li>
-        <li><i className="fa fa-map-marker"></i> Rua Raimundo Nunes Moreira 131, Ipueiras/CE</li>
+        <li><i className="fa fa-phone"></i> (83) 9 9971-5961</li>
+        <li><i className="fa fa-map-marker"></i> Rua C Parque Donatello, 100, Bl 7 Apt 201, Messejana, Fortaleza-CE</li>
         <li><i className="fa fa-envelope"></i> comercial@cearabytes.com.br</li>
       </ul>
     </div>
