@@ -1,5 +1,5 @@
 import ParticleBackground from '../../components/ParticleBackground';
-import Scroll from '../../components/scroll';
+import Scroll from '../../components/ScrollNew';
 import './styles.css';
 import React from 'react';
 
