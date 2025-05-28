@@ -1,5 +1,5 @@
 import React from 'react';
-import useScrollReveal from '../hooks/useScrollReveal';
+import useScrollReveal from '../hooks/UseScrollReveal';
 
 const Scroll = ({ children, y, start, end }) => {
   const ref = useScrollReveal({ y, start, end });
