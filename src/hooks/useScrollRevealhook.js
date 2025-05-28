@@ -5,15 +5,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const useScrollReveal = ({ y = 100, start = 'top 80%', end = 'bottom 60%' } = {}) => {
-  const ref = useRef(null);
+  const ref = useRef();
 
   useEffect(() => {
     const el = ref.current;
 
-    if (!el) return;
-
-    const anim = gsap.fromTo(
-      el,
+    const anim = gsap.fromTo(el,
       { y, opacity: 0 },
       {
         y: 0,
@@ -24,13 +21,13 @@ const useScrollReveal = ({ y = 100, start = 'top 80%', end = 'bottom 60%' } = {}
           trigger: el,
           start,
           end,
-          toggleActions: 'play none none none',
+          toggleActions: 'restart none none none', // <- aqui está o segredo
         },
       }
     );
 
     return () => {
-      if (anim.scrollTrigger) anim.scrollTrigger.kill();
+      anim.scrollTrigger?.kill();
       anim.kill();
     };
   }, [y, start, end]);
