@@ -56,7 +56,7 @@ function Home() {
         <div className="projects-container">
           <div className="project-row right">
             <div className="project-panel">
-              <img src="public/Captura de tela 2025-05-26 140143.png" alt="Projeto 1" />
+              <img src="/Captura de tela 2025-05-26 140143.png" alt="Projeto 1" />
             </div>
             <div className="project-panel">
               <img src="/Captura de tela 2025-05-26 140210.png" alt="Projeto 2" />
@@ -65,7 +65,7 @@ function Home() {
 
           <div className="project-row left">
             <div className="project-panel">
-              <img src="public/Captura de tela 2025-05-26 140329.png" alt="Projeto 3" />
+              <img src="/Captura de tela 2025-05-26 140329.png" alt="Projeto 3" />
             </div>
             <div className="project-panel">
               <img src="/clinica 1.png" alt="Projeto 4" />
@@ -89,7 +89,7 @@ function Home() {
           {/* Lado direito */}
           <div className="painel3d-container">
             <img
-              src="public/clinica 1.png"
+              src="/clinica 1.png"
               alt="Projeto"
               className="painel3d"
             />
