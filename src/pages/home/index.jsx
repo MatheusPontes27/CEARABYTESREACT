@@ -3,6 +3,7 @@ import Scroll from '../../components/ScrollNew';
 import './styles.css';
 import React from 'react';
 
+
 function Home() {
   return (
     <>
@@ -168,9 +169,9 @@ function Home() {
         </div>
         <h3>Bronze</h3>
         <p>
-          Site institucional com 1 página<br />
-          Design simples e moderno<br />
-          Prazo de entrega: 3 dias úteis
+           <span>Site institucional com 1 página</span><br />
+           <span>Design simples e moderno</span><br />
+           <span>Prazo de entrega: 3 dias úteis</span>
         </p>
       </div>
       <div className="card-back">
@@ -189,9 +190,9 @@ function Home() {
         </div>
         <h3>Silver</h3>
         <p>
-          Site completo com até 5 páginas<br />
-          Design profissional e responsivo<br />
-          Prazo de entrega: 5 dias úteis
+          <span>Site completo com até 5 páginas</span><br />
+          <span>Design profissional e responsivo</span><br />
+          <span>Prazo de entrega: 5 dias úteis</span>
         </p>
       </div>
       <div className="card-back">
@@ -211,9 +212,9 @@ function Home() {
         </div>
         <h3>Gold</h3>
         <p>
-          Site premium com blog, integração e painel<br />
-          Design avançado e performance otimizada<br />
-          Prazo de entrega: 7 dias úteis
+          <span>Site premium com blog, integração e painel</span><br />
+          <span>Design avançado e performance otimizada</span><br />
+          <span>Prazo de entrega: 7 dias úteis</span>
         </p>
       </div>
       <div className="card-back">
@@ -257,44 +258,57 @@ function Home() {
 </div>
 
   <div className="contato-direita">
-    <div className="card-contato">
-      <div className="item-contato">
-        <i className="fab fa-instagram"></i>
-        <div>
-          <h3>@cearabytes</h3>
-          <p>Nos siga no Instagram para ver nossos projetos em tempo real.</p>
-        </div>
+  <div className="card-contato">
+
+    {/* Instagram */}
+    <a href="https://www.instagram.com/cearabytes" target="_blank" rel="noreferrer" className="item-contato">
+      <i className="fab fa-instagram"></i>
+      <div>
+        <h3>@cearabytes</h3>
+        <p>Nos siga no Instagram para ver nossos projetos em tempo real.</p>
       </div>
-      <div className="item-contato">
-        <i className="fab fa-whatsapp"></i>
-        <div>
-          <h3>WhatsApp</h3>
-          <p>Entre em contato diretamente para dúvidas ou orçamentos.</p>
-        </div>
+    </a>
+
+    {/* WhatsApp */}
+    <a href="https://wa.me/5583999715961" target="_blank" rel="noreferrer" className="item-contato">
+      <i className="fab fa-whatsapp"></i>
+      <div>
+        <h3>WhatsApp</h3>
+        <p>Entre em contato diretamente para dúvidas ou orçamentos.</p>
       </div>
-      <div className="item-contato">
-        <i className="fab fa-linkedin"></i>
-        <div>
-          <h3>LinkedIn</h3>
-          <p>Conecte-se conosco para oportunidades e parcerias.</p>
-        </div>
+    </a>
+
+    {/* LinkedIn */}
+    <a href="https://www.linkedin.com/company/cearabytes" target="_blank" rel="noreferrer" className="item-contato">
+      <i className="fab fa-linkedin"></i>
+      <div>
+        <h3>LinkedIn</h3>
+        <p>Conecte-se conosco para oportunidades e parcerias.</p>
       </div>
-      <div className="item-contato">
-        <i className="fas fa-map-marker-alt"></i>
-        <div>
-          <h3>Fortaleza - CE</h3>
-          <p>Estamos localizados no interior do Ceará.</p>
-        </div>
+    </a>
+
+    {/* Localização */}
+    <a href="https://www.google.com/maps/place/Ipueiras,+CE" target="_blank" rel="noreferrer" className="item-contato">
+      <i className="fas fa-map-marker-alt"></i>
+      <div>
+        <h3>Fortaleza - CE</h3>
+        <p>Estamos localizados no interior do Ceará.</p>
       </div>
-      <div className="item-contato">
-        <i className="fas fa-envelope"></i>
-        <div>
-          <h3>Email</h3>
-          <p>contato@cearabytes.com.br</p>
-        </div>
+    </a>
+
+    {/* Email */}
+    <a href="mailto:contato@cearabytes.com" className="item-contato">
+      <i className="fas fa-envelope"></i>
+      <div>
+        <h3>Email</h3>
+        <p>comercial@cearabytes.com</p>
       </div>
-    </div>
+    </a>
+
   </div>
+</div>
+
+
 </section></Scroll>
 <footer className="footer">
   <div className="footer-content">
@@ -311,10 +325,10 @@ function Home() {
    <div className="footer-column">
   <h4>Redes Sociais</h4>
   <div className="social-icons">
-    <a href="https://facebook.com" target="_blank" rel="noreferrer">
+    <a href="https://www.facebook.com/p/Ceará-Bytes-61563199433038/?locale=pt-br" target="_blank" rel="noreferrer">
       <i className="fab fa-facebook-f"></i> Facebook
     </a>
-    <a href="https://instagram.com" target="_blank" rel="noreferrer">
+    <a href="https://www.instagram.com/cearabytes/" target="_blank" rel="noreferrer">
       <i className="fab fa-instagram"></i> Instagram
     </a>
      <a href="https://twitter.com" target="_blank" rel="noreferrer">
