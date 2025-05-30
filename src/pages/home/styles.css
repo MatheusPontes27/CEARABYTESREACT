@@ -1124,6 +1124,8 @@ footer {
 
 }
 
+/* SEÇÃO INICIAL (HERO) */
+
 @media (max-width: 768px) {
   .hero-section {
     padding: 10px 15px;
@@ -1185,9 +1187,9 @@ footer {
   /* Painéis menores mantendo proporção */
   .project-panel {
     position: relative;
-    right: 360px;
-    width: 140px;  /* largura pequena */
-    top: 100px;
+    right: 380px;
+    width: 170px;  /* largura pequena */
+    bottom: -130px;
     height: auto;
     margin: 0 auto; /* centraliza horizontalmente */
     border-radius: 10px;
@@ -1200,6 +1202,149 @@ footer {
     display: block;
   }
 }
+
+/* SEÇÃO PORTFOLIO */
+
+@media (max-width: 768px) {
+  /* GERAL */
+  .projetos-container {
+    position: relative;
+    bottom: 210px;
+    right: -5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8rem;
+    font-size: 20px;
+    gap: 1.5rem;
+  }
+
+  .projeto.invertido-left {
+    position: relative;
+    bottom: 100px;
+    right: -5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8rem;
+    font-size: 20px;
+    gap: 1.5rem;
+  }
+
+  .Titulo-Projetos {
+    position: relative;
+    font-size: 2.5rem;
+    text-align: center;
+    left: 5px;
+    top: -200px;
+  }
+
+  /* PROJETOS DO LADO DIREITO */
+  .projetos-texto {
+    position: relative;
+    right: 30px;
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .projetos-texto h2 {
+    position: relative;
+    right: -30px;
+    top: -20px;
+    width: 40%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .projetos-texto-invertido h2 {
+    position: relative;
+    top: -80px;
+    right: -150px;
+    width: 40%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .projetos-texto p {
+    position: relative;
+    top: -20px;
+    right: -30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .projetos-texto-invertido p {
+    position: relative;
+    top: -80px;
+    right: -150px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .painel3d-container {
+    position: relative;
+    top: -110px;
+    left: -20px;
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+  }
+
+  .painel3d {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* PROJETOS DO LADO ESQUERDO */
+  .projetos-texto-invertido {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .painel3d-container-left {
+    position: relative;
+    left: 10px;
+    top: 250px;
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+  }
+
+  .painel3d-left img,
+  .imagem-projeto {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .botao3d {
+    position: relative;
+    top: 120px;
+    right: -30px;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  /* BOTÕES */
+
+  .botao3d-left {
+    position: relative;
+    right: -30px;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+
+
 
 
 
