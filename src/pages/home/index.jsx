@@ -15,7 +15,14 @@ function Home() {
             className="logo"
             src="/ChatGPT Image 26 de mai. de 2025, 09_09_32.png"
             alt="CearaBytes Logo"
-          />      
+          />
+          <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+           <label htmlFor="menu-toggle" className="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+           </label>
+           
           <nav className="nav">
             <a className="nav-link" href="#projetos">Projetos</a>
             <a className="nav-link" href="#planos">Orçamentos</a>
