@@ -1234,7 +1234,6 @@ footer {
     max-width: 46%;
   }
 
-  
 
   .painel3d {
     width: 100%;
@@ -1252,24 +1251,32 @@ footer {
   }
 
   .projetos-texto-invertido {
-    max-width: 46%;
+    max-width: 15%;
     text-align: center;
   }
 
   .projetos-texto-invertido h2 {
+    position: relative;
+    right: 805px;
     font-size: 1rem;
   }
 
   .projetos-texto-invertido p {
+    position: relative;
+    right: 805px;
     font-size: 0.8rem;
   }
 
   .botao3d-left {
+    position: relative;
+    left: -800px;
     font-size: 0.7rem;
     padding: 0.4rem 0.7rem;
   }
 
   .painel3d-container-left {
+    position: relative;
+    left: -180px;
     max-width: 14%;
   }
 }
