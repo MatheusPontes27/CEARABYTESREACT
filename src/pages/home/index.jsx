@@ -30,7 +30,7 @@ function Home() {
             <a className="nav-link" href="#contatos">Contatos</a>
           </nav>
         </div>
-        <a className="contact-button" href="#contatos">Entre em contato</a>
+        <a className='contact-button' href="https://wa.me/+5583999715961">Entre em Contato</a>
       </header>
 
       <div className="spacer"></div>
