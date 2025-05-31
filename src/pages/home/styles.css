@@ -1203,145 +1203,79 @@ footer {
   }
 }
 
-/* SEÇÃO PORTFOLIO */
-
+/* MOBILE */
 @media (max-width: 768px) {
-  /* GERAL */
-  .projetos-container {
-    position: relative;
-    bottom: 210px;
-    right: -5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.8rem;
-    font-size: 20px;
-    gap: 1.5rem;
+  .projeto {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
   }
 
-  .projeto.invertido-left {
-    position: relative;
-    bottom: 100px;
-    right: -5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.8rem;
-    font-size: 20px;
-    gap: 1.5rem;
-  }
-
-  .Titulo-Projetos {
-    position: relative;
-    font-size: 2.5rem;
-    text-align: center;
-    left: 5px;
-    top: -200px;
-  }
-
-  /* PROJETOS DO LADO DIREITO */
   .projetos-texto {
-    position: relative;
-    right: 30px;
-    width: 100%;
-    font-size: 1.3rem;
+    max-width: 46%;
     text-align: center;
-    margin-bottom: 0.5rem;
   }
 
   .projetos-texto h2 {
-    position: relative;
-    right: -30px;
-    top: -20px;
-    width: 40%;
-    font-size: 1.3rem;
-    text-align: center;
+    font-size: 1rem;
   }
 
-  .projetos-texto-invertido h2 {
-    position: relative;
-    top: -80px;
-    right: -150px;
-    width: 40%;
-    font-size: 1.3rem;
-    text-align: center;
-  }
 
   .projetos-texto p {
-    position: relative;
-    top: -20px;
-    right: -30px;
-    width: 100%;
-    text-align: center;
+    font-size: 0.8rem;
   }
 
-  .projetos-texto-invertido p {
-    position: relative;
-    top: -80px;
-    right: -150px;
-    width: 100%;
-    text-align: center;
+  .botao3d {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.7rem;
   }
 
   .painel3d-container {
-    position: relative;
-    top: -110px;
-    left: -20px;
-    width: 100%;
-    max-width: 250px;
-    overflow: hidden;
+    max-width: 46%;
   }
+
+  
 
   .painel3d {
     width: 100%;
     height: auto;
-    object-fit: contain;
-    display: block;
   }
 
-  /* PROJETOS DO LADO ESQUERDO */
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .projeto.invertido-left {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
   .projetos-texto-invertido {
-    position: relative;
-    width: 100%;
+    max-width: 46%;
     text-align: center;
   }
 
-  .painel3d-container-left {
-    position: relative;
-    left: 10px;
-    top: 250px;
-    width: 100%;
-    max-width: 250px;
-    overflow: hidden;
-  }
-
-  .painel3d-left img,
-  .imagem-projeto {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-  }
-
-  .botao3d {
-    position: relative;
-    top: 120px;
-    right: -30px;
-    margin-top: 1rem;
-    padding: 0.6rem 1.2rem;
+  .projetos-texto-invertido h2 {
     font-size: 1rem;
   }
 
-  /* BOTÕES */
+  .projetos-texto-invertido p {
+    font-size: 0.8rem;
+  }
 
   .botao3d-left {
-    position: relative;
-    right: -30px;
-    margin-top: 1rem;
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .painel3d-container-left {
+    max-width: 14%;
   }
 }
+
+
+
 
 
 

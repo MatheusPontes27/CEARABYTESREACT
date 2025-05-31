@@ -103,7 +103,7 @@ function Home() {
             />
           </div>
 
-          <div class="projeto invertido-left1">
+          <div class="projeto invertido-left">
             <div class="painel3d-container-left">
              <div className="painel3d-left">
               <img
