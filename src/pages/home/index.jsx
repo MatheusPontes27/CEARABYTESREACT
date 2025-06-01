@@ -91,7 +91,8 @@ function Home() {
             <p>
               Projeto para a Clínica Odontológica Eminence, situada na cidade de Campina Grande - PB. Trouxe agilidade e eficiencia na marcação de consultas, além de captar clientes.
             </p>
-            <button className="botao3d">Ver mais</button>
+            <a href="https://www.clinicaeminence.com.br" target="_blank" rel="noopener noreferrer">
+              <button className="botao3d">Ver mais</button></a>
           </div>
 
           {/* Lado direito */}
@@ -118,7 +119,8 @@ function Home() {
             <p>
               Projeto iniciante de portfólio, com visual simples e de fácil entendimento com uso de HTML,CSS e JS puro, link de whatsapp.
             </p>
-            <button className="botao3d-left">Ver mais</button>
+            <a href="https://matheuspontes27.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+              <button className="botao3d">Ver mais</button></a>
             </div>
           </div>
 
@@ -127,9 +129,12 @@ function Home() {
           <div className="projetos-texto">
             <h2>MB Engenharia</h2>
             <p>
-              Projeto para a Clínica Odontológica Eminence, situada na cidade de Campina Grande - PB. Trouxe agilidade e eficiencia na marcação de consultas, além de captar clientes.
+              Projeto para a MB Engenharia, sediada em Fortaleza-CE. O novo site trouxe modernidade e profissionalismo à presença digital da empresa, além de facilitar o contato com clientes e apresentar os serviços de forma clara e objetiva.
+
+
             </p>
-            <button className="botao3d">Ver mais</button>
+            <a href="https://mbengenharia.vercel.app" target="_blank" rel="noopener noreferrer">
+              <button className="botao3d">Ver mais</button></a>
           </div>
 
           {/* Lado direito */}
@@ -155,9 +160,10 @@ function Home() {
             <div class="projetos-texto-invertido">
               <h2>Casamento Aline e Matheus</h2>
             <p>
-              Projeto iniciante de portfólio, com visual simples e de fácil entendimento com uso de HTML,CSS e JS puro, link de whatsapp.
+              Site de casamento, com visual simples e de fácil entendimento, com convite online, links para presentes e muito mais. Feito com uso de HTML,CSS e JS puro.
             </p>
-            <button className="botao3d-left">Ver mais</button>
+            <a href="https://www.casamentoalineematheus.com.br" target="_blank" rel="noopener noreferrer">
+              <button className="botao3d">Ver mais</button></a>
             </div>
           </div>
         </div>
