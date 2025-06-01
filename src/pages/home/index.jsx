@@ -120,7 +120,7 @@ function Home() {
               Projeto iniciante de portfólio, com visual simples e de fácil entendimento com uso de HTML,CSS e JS puro, link de whatsapp.
             </p>
             <a href="https://matheuspontes27.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
-              <button className="botao3d">Ver mais</button></a>
+              <button className="botao3d-left">Ver mais</button></a>
             </div>
           </div>
 
@@ -163,7 +163,7 @@ function Home() {
               Site de casamento, com visual simples e de fácil entendimento, com convite online, links para presentes e muito mais. Feito com uso de HTML,CSS e JS puro.
             </p>
             <a href="https://www.casamentoalineematheus.com.br" target="_blank" rel="noopener noreferrer">
-              <button className="botao3d">Ver mais</button></a>
+              <button className="botao3d-left">Ver mais</button></a>
             </div>
           </div>
         </div>
