@@ -367,12 +367,7 @@ function Home() {
         <section id="contatos" className="contato-section">
           <div className="contato-esquerda">
             <h1>Entre em Contato</h1>
-            <form
-              className="form-contato"
-              action="mailto:contato@cearabytes.com.br"
-              method="POST"
-              encType="text/plain"
-            >
+            <form className="form-contato" action="sendmail.php" method="POST">
               <input type="text" name="nome" placeholder="Seu nome" required />
               <input
                 type="email"
