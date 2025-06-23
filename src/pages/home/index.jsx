@@ -250,7 +250,7 @@ function Home() {
                 </p>
               </div>
               <div className="card-back">
-                <p>R$ 199,90</p>
+                <p>R$ 1250,00</p>
                 <button className="btn-3d">Contratar</button>
               </div>
             </div>
@@ -282,7 +282,7 @@ function Home() {
                 </p>
               </div>
               <div className="card-back">
-                <p>R$ 599,90</p>
+                <p>R$ 1500,00</p>
                 <button className="btn-3d">Contratar</button>
               </div>
             </div>
@@ -322,7 +322,7 @@ function Home() {
                 </p>
               </div>
               <div className="card-back">
-                <p>R$ 899,90</p>
+                <p>R$ 2000,00</p>
                 <button className="btn-3d">Contratar</button>
               </div>
             </div>
