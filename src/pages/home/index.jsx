@@ -246,7 +246,7 @@ function Home() {
                   <br />
                   <span>Design simples e moderno</span>
                   <br />
-                  <span>Prazo de entrega: 3 dias úteis</span>
+                  <span>Prazo de entrega: 15 dias úteis</span>
                 </p>
               </div>
               <div className="card-back">
@@ -278,7 +278,7 @@ function Home() {
                   <br />
                   <span>Design profissional e responsivo</span>
                   <br />
-                  <span>Prazo de entrega: 5 dias úteis</span>
+                  <span>Prazo de entrega: 30 dias úteis</span>
                 </p>
               </div>
               <div className="card-back">
@@ -318,7 +318,7 @@ function Home() {
                   <br />
                   <span>Design avançado e performance otimizada</span>
                   <br />
-                  <span>Prazo de entrega: 7 dias úteis</span>
+                  <span>Prazo de entrega: 45 dias úteis</span>
                 </p>
               </div>
               <div className="card-back">
